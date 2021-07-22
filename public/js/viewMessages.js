@@ -1,5 +1,4 @@
-console.log("test")
-
 const getMessages = () => {
-    console.log("running getMessages...")
+    const passcode = document.querySelector("#passcode")
+    console.log("running getMessages...", passcode)
 }
