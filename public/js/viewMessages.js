@@ -5,6 +5,8 @@ const getMessages = () => {
         const data = snapshot.val()
         key = passcode.value
         console.log(data[key])
+        message = document.querySelector("#message")
+        message.innerHTML = data[key]
 
     } )
 }
