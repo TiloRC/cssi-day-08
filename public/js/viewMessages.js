@@ -3,6 +3,8 @@ const getMessages = () => {
     const messagesRef = firebase.database().ref();
     messagesRef.on("value", (snapshot) => {
         const data = snapshot.val()
-        console.log(data)
+        key = passcode.value
+        console.log(data[key])
+
     } )
 }
