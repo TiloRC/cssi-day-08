@@ -6,6 +6,9 @@ const getMessages = () => {
         key = passcode.value
         console.log(data[key])
         message = document.querySelector("#message")
+        if (data[key] ==undefined ) {
+            alert("undefined")
+        }
         message.innerHTML = data[key]
 
     } )
